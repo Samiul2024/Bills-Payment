@@ -1,3 +1,7 @@
+# Bills Payment Website Docs
+TO Pay bills We have to Go to pay bill page but before that we need to login first
+If you are not registered you will be asked to register to our website first
+
 # React + Vite
 
 This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
