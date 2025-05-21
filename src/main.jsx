@@ -14,6 +14,7 @@ import PrivateRoute from './Routes/PrivateRoute.jsx'
 import Profile from './Components/Profile/Profile.jsx'
 import Dashboard from './Components/Dashboard/Dashboard.jsx'
 import UpdateProfile from './Components/UpdateProfile/UpdateProfile.jsx'
+import PhoneDetails from './Components/PhoneDetails.jsx'
 
 // export const AuthContext = createContext(null);
 
@@ -59,6 +60,13 @@ const router = createBrowserRouter([
         element: <PrivateRoute>
           <UpdateProfile></UpdateProfile>
         </PrivateRoute>
+      },
+      {
+        path: 'bills-page/:id',
+        element: <PrivateRoute>
+          <PhoneDetails></PhoneDetails>
+        </PrivateRoute>
+
       }
     ]
   }

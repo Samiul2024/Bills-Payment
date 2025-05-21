@@ -26,12 +26,17 @@ const PhonesContainer = ({ phones }) => {
             </div>
             <div className='grid grid-cols-1  lg:grid-cols-2 gap-8 mb-8'>
                 {
-                    displayPhones.map(phone => (
-                        <PhoneCard
-                            key={phone.id}
-                            phone={phone}
-                        />
-                    ))
+                    Array.isArray(displayPhones) ? (
+                        displayPhones.map(phone => (
+                            <PhoneCard
+                                key={phone.id}
+                                phone={phone}
+                            />
+                        ))
+                    ) : (
+                        <p>No Bills Available</p>
+                    )
+
                 }
             </div>
             {/* <button onClick={() => {
@@ -46,12 +51,12 @@ const PhonesContainer = ({ phones }) => {
                 <span className="absolute bottom-0 right-0 w-full h-12 -mb-1 -mr-1 transition-all duration-200 ease-linear bg-gray-900 rounded-lg group-hover:mb-0 group-hover:mr-0" data-rounded="rounded-lg"></span>
             </button> */}
             <div className='text-center'>
-                <button 
-                className='btn btn-primary'
-                onClick={() => {
-                    setShowAll(prv => !prv)
-                    if (showAll) window.scrollTo(0, 350)
-                }} label={showAll ? 'Show Less' : 'Show All Lawyer'} ></button>
+                <button
+                    className='btn btn-primary'
+                    onClick={() => {
+                        setShowAll(prv => !prv)
+                        if (showAll) window.scrollTo(0, 350)
+                    }} label={showAll ? 'Show Less' : 'Show All Lawyer'} ></button>
             </div>
         </div>
     );

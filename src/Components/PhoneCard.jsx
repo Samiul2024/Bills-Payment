@@ -32,7 +32,7 @@ const PhoneCard = ({ phone, deletable, handleDelete }) => {
                 </div>
                 <div className="text-center my-4" >
 
-                    <Link to={`/lawyer-details/${id}`}>
+                    <Link to={`/bills-page/${id}`}>
                         <button
                             className='btn btn-primary'
                             label='View Details' ></button>
