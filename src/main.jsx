@@ -9,10 +9,11 @@ import Login from './Components/Login/Login.jsx'
 import Register from './Components/Register/Register.jsx'
 import SignUp from './Components/SignUp/SignUp.jsx'
 import AuthProvider from './contexts/AuthProvider.jsx'
-import Orders from './Components/orders/Orders.jsx'
+import Bills from './Components/bills/Bills.jsx'
 import PrivateRoute from './Routes/PrivateRoute.jsx'
 import Profile from './Components/Profile/Profile.jsx'
 import Dashboard from './Components/Dashboard/Dashboard.jsx'
+import UpdateProfile from './Components/UpdateProfile/UpdateProfile.jsx'
 
 // export const AuthContext = createContext(null);
 
@@ -24,15 +25,21 @@ const router = createBrowserRouter([
     path: '/',
     Component: Root,
     children: [
-      { index: true, Component: Home },
+      {
+        index: true,
+        element: <Home />,
+        hydrateFallbackElement: <h1 className="text-3xl text-center bg-amber-500 px-8">Loading lawers , Please wait.....</h1>,
+        loader: () => fetch('/public/bills.json')
+
+      },
       { path: 'login', Component: Login },
-      { path: 'register', Component: Register },
+      // { path: 'register', Component: Register },
       { path: 'signup', Component: SignUp },
       // { path: 'orders', Component: Orders }
       {
-        path: 'orders',
+        path: 'bills',
         element: <PrivateRoute>
-          <Orders></Orders>
+          <Bills></Bills>
         </PrivateRoute>
       },
       {
@@ -42,9 +49,15 @@ const router = createBrowserRouter([
         </PrivateRoute>
       },
       {
-        path:'dashboard',
-        element:<PrivateRoute>
+        path: 'dashboard',
+        element: <PrivateRoute>
           <Dashboard></Dashboard>
+        </PrivateRoute>
+      },
+      {
+        path: 'updateProfile',
+        element: <PrivateRoute>
+          <UpdateProfile></UpdateProfile>
         </PrivateRoute>
       }
     ]

@@ -9,18 +9,18 @@ const SwiperCarousel = () => {
     const slides = [
         {
             id: 1,
-            image: "https://i.ibb.co/21d8s4db/IMG-20250314-173142.jpg",
-            title: "Tech Innovation",
+            image: "https://i.ibb.co/hJfR5Z88/nesco.png",
+            title: "NESCO",
         },
         {
             id: 2,
-            image: "https://i.ibb.co/FkYYqhCm/IMG-20250314-173152.jpg",
-            title: "Nature Vibes",
+            image: "https://i.ibb.co/FbxRbrrr/wapda.jpg",
+            title: "WAPDA",
         },
         {
             id: 3,
-            image: "https://i.ibb.co/chBcVYvP/IMG-20250314-175204.jpg",
-            title: "Urban Cityscape",
+            image: "https://i.ibb.co/MyqN107d/dwasa.png",
+            title: "WASA",
         },
     ];
 
@@ -32,18 +32,18 @@ const SwiperCarousel = () => {
                 slidesPerView={1}
                 navigation
                 pagination={{ clickable: true }}
-                autoplay={{ delay: 1000 }}
+                autoplay={{ delay: 2500 }}
                 loop={true}
             >
                 {slides.map((slide) => (
                     <SwiperSlide key={slide.id}>
-                        <div className="relative w-full h-96 max-h-fit rounded-2xl overflow-hidden shadow-lg">
+                        <div className="w-64 h-64 mx-auto flex flex-col items-center justify-center text-center rounded-2xl shadow-lg">
                             <img
                                 src={slide.image}
                                 alt={slide.title}
-                                className="w-full h-full object-cover"
+                                className="w-fit h-fit mb-4 object-cover"
                             />
-                            <div className="absolute bottom-60 left-40 w-full  text-white text-7xl font-semibold px-4 py-2">
+                            <div className="text-yellow-400 bg-gray-600 text-2xl font-semibold px-4 ">
                                 {slide.title}
                             </div>
                         </div>

@@ -1,9 +1,9 @@
 import React from 'react';
 
-const Orders = () => {
+const Bills = () => {
     return (
         <div className='max-w-sm mx-auto'>
-            <h2>Your orders history</h2>
+            <h2>Your Bills history</h2>
             <div>
                 <ol>
                     <li>item-1</li>
@@ -20,4 +20,4 @@ const Orders = () => {
     );
 };
 
-export default Orders;
+export default Bills;

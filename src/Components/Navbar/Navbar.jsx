@@ -9,13 +9,13 @@ const Navbar = () => {
 
     // const userInfo = use(AuthContext);
     const { user, signOutUser } = use(AuthContext);
-    console.log(user);
-    console.log(signOutUser);
-
+    
     const handleSignOut = () => {
         signOutUser()
-            .then(() => {
-                console.log("sign out successful");
+        .then(() => {
+            console.log("sign out successful");
+            console.log(user);
+            console.log(signOutUser);
             })
             .catch((error) => {
                 console.log(error);
@@ -26,17 +26,19 @@ const Navbar = () => {
     // console.log('user info at the navbar',userInfo);
 
     const links = <>
-        <li><NavLink to='/'>Home</NavLink></li>
-        <li><NavLink to='/login'>LogIn</NavLink></li>
-        <li><NavLink to='/register'>Register</NavLink></li>
-        <li><NavLink to='/signup'>SignUp</NavLink></li>
-        <li><NavLink to='/dashboard'>Dashboard</NavLink></li>
-        {
+        {/* <li><NavLink to='/'>Home</NavLink></li> */}
+        {/* <li><NavLink to='/login'>LogIn</NavLink></li> */}
+        <li><NavLink to='/bills'>Bills</NavLink></li>
+        <li><NavLink to='/profile'>My Profile</NavLink></li>
+        {/* <li><NavLink to='/register'>Register</NavLink></li> */}
+        {/* <li><NavLink to='/signup'>SignUp</NavLink></li> */}
+        {/* <li><NavLink to='/dashboard'>Dashboard</NavLink></li> */}
+        {/* {
             user && <>
-                <li><NavLink to='/orders'>Orders</NavLink></li>
+                <li><NavLink to='/bills'>Bills</NavLink></li>
                 <li><NavLink to='/profile'>Profile</NavLink></li>
             </>
-        }
+        } */}
 
     </>
     return (
@@ -52,7 +54,14 @@ const Navbar = () => {
                         {links}
                     </ul>
                 </div>
-                <a className="btn btn-ghost text-xl">daisyUI</a>
+                <div className='flex'>
+                    <NavLink to='/'>
+                        <img className='w-fit h-16 object-cover' src="/src/assets/logo.jpeg" alt="logo" />
+                    </NavLink>
+
+                    {/* <a className="btn btn-ghost text-xl">sBanking</a> */}
+                </div>
+
             </div>
             <div className="navbar-center hidden lg:flex">
                 <ul className="menu menu-horizontal px-1">
@@ -62,13 +71,26 @@ const Navbar = () => {
             <div className="navbar-end">
                 {user ?
                     <>
-                        <span>
-                            {user.email}
-                        </span>
-                        <a onClick={handleSignOut} className="btn">Sign Out</a>
+                        <div className='flex gap-4 pr-4'>
+
+                            <span>
+                                <img className='w-12 h-12 rounded-full object-cover' src={user.photoURL} alt="" />
+                            </span>
+                            <a onClick={handleSignOut} className="btn">Sign Out</a>
+                        </div>
                     </>
-                    : <Link to='/login'>LogIn</Link>}
+                    :
+                    <>
+                        <div className='flex gap-4 pr-4'>
+                            <NavLink className='btn' to='/signup'>Register</NavLink>
+                            <NavLink className='btn' to='/login'>LogIn</NavLink>
+
+                        </div>
+                    </>
+                }
+
             </div>
+
         </div>
     );
 };

@@ -8,7 +8,7 @@ const Register = () => {
 
     const { createUser } = use(AuthContext);
     // console.log(userInfo);
-    const navigate=useNavigate();
+    const navigate = useNavigate();
 
     const handleRegister = e => {
         e.preventDefault();
@@ -27,7 +27,9 @@ const Register = () => {
         createUser(email, password)
             .then((result) => {
                 console.log(result);
-                navigate('/')
+                // navigate('/')
+                navigate(location?.state || '/')
+
             })
             .catch(error => {
                 console.log(error);

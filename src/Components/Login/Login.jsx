@@ -34,7 +34,7 @@ const Login = () => {
                 navigate(location?.state || '/')
             })
             .catch(error => {
-                console.log(error);
+                setErrorMessage(error.message);
             })
 
         // reset  errorMessage

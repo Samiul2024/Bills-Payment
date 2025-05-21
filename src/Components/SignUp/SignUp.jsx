@@ -2,12 +2,13 @@ import { createUserWithEmailAndPassword, sendEmailVerification, updateProfile } 
 import React, { useState } from 'react';
 import { auth } from '../../firebase.iniit';
 import { FaEye, FaEyeSlash } from 'react-icons/fa';
-import { Link } from 'react-router';
+import { Link, useNavigate } from 'react-router';
 
 const SignUp = () => {
     const [success, setSuccess] = useState(false);
     const [errorMessage, setErrorMessage] = useState('');
     const [showPassword, setShowPassword] = useState(false);
+    const navigate = useNavigate();
     const handleSignUp = e => {
         e.preventDefault();
         const name = e.target.name.value;
@@ -26,9 +27,9 @@ const SignUp = () => {
         }
 
         // password validation
-        const passwprdRegEx = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{8,}$/;
-        if (passwprdRegEx.test(password) === false) {
-            setErrorMessage('password must have at least one digit 6 characters of lowercase and uppercase')
+        const passwordRegEx = /^(?=.*\d)(?=.*[a-z])(?=.*[A-Z]).{6,}$/;
+        if (passwordRegEx.test(password) === false) {
+            setErrorMessage('password must have at least one digit, 6 characters of lowercase and uppercase including one number')
             return;
         }
 
@@ -37,46 +38,47 @@ const SignUp = () => {
         createUserWithEmailAndPassword(auth, email, password)
             .then(result => {
                 console.log(result);
-                //email varify 
-                sendEmailVerification(auth.currentUser)
-                    .then(() => {
-                        setSuccess(true);
-                    })
+                setSuccess(true);
+                //email verify 
+                // sendEmailVerification(auth.currentUser)
+                // .then(() => {
 
                 // update user Profile
                 const profile = {
                     displayName: name,
                     photoURL: photo
-                }
-                updateProfile(auth.currentUser, profile)
-                    .then(() => {
-                        console.log("User Profile updated");
-                    })
-                    .catch((error) => {
-                        console.log(error);
-                    })
+                };
+                return updateProfile(result.user, profile);
             })
-            .catch(error => {
+            .then(() => {
+                console.log("User Profile updated");
+                navigate(location?.state || '/')
+            })
+            .catch((error) => {
                 console.log(error);
                 setErrorMessage(error.message);
-            })
+            });
+        //     }
+        //             .catch (error => {
+        //     console.log(error);
+        // })
 
     }
     return (
 
-        <div className="hero-content flex-col  lg:flex-col">
+        <div className="hero-content flex-col mx-auto lg:flex-col">
             <div className="text-center lg:text-left">
-                <h1 className="text-3xl font-bold">Please sign Up now!</h1>
+                <h1 className="text-3xl font-bold">Please Register!</h1>
             </div>
             <div className="card bg-base-100 w-full max-w-sm shrink-0 shadow-2xl">
                 <div className="card-body ">
-                    <form onSubmit={handleSignUp}>
+                    <form className='flex flex-col gap-2' onSubmit={handleSignUp}>
                         <label className="label">Name</label>
                         <input type="text" name='name' className="input" placeholder="Your Name" />
-                        <label className="label">Photo URL</label>
-                        <input type="text" name='photo' className="input" placeholder="Photo URL" />
                         <label className="label">Email</label>
                         <input type="email" name='email' className="input" placeholder="Email" />
+                        <label className="label">Photo URL</label>
+                        <input type="text" name='photo' className="input" placeholder="Photo URL" />
                         <label className="label mt-4">Password</label>
                         <div className='relative'>
                             <input
@@ -98,9 +100,9 @@ const SignUp = () => {
                                 Accept Terms And Conditions
                             </label>
                         </div>
-                        <button className="btn btn-neutral mt-4">SignUp</button>
+                        <button className="btn btn-neutral mt-4">Register</button>
                     </form>
-                    <p>Already Have an Acoount? Please <Link className='text-blue-700 underline' to="/login" >LogIn</Link></p>
+                    <p>Already Have an Account? Please <Link className='text-blue-700 underline' to="/login" >LogIn</Link></p>
                     {
                         errorMessage && <p className='text-red-600'>{errorMessage}</p>
                     }

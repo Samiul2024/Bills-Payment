@@ -1,0 +1,58 @@
+[
+  {
+    "id": 1,
+    "billType": "electricity",
+    "icon": "https://i.ibb.co/cX3N96fX/desco.png",
+    "organization": "DESCO",
+    "amount": 3200,
+    "dueDate": "2025-06-10T12:00:00.000Z"
+  },
+  {
+    "id": 2,
+    "billType": "gas",
+    "icon": "https://i.ibb.co/n8DhvbG6/titas-gas.jpg",
+    "organization": "Titas Gas",
+    "amount": 2700,
+    "due-date": "2025-06-12T12:00:00.000Z"
+  },
+  {
+    "id": 3,
+    "billType": "water",
+    "icon": "https://i.ibb.co/MyqN107d/dwasa.png",
+    "organization": "WASA",
+    "amount": 2300,
+    "due-date": "2025-06-15T12:00:00.000Z"
+  },
+  {
+    "id": 4,
+    "billType": "internet",
+    "icon": "https://i.ibb.co/v6SbGJ1N/credit-card.jpg",
+    "organization": "Credit Card",
+    "amount": 1950,
+    "dueDate": "2025-06-18T12:00:00.000Z"
+  },
+  {
+    "id": 5,
+    "billType": "electricity",
+    "icon": "https://i.ibb.co/FbxRbrrr/wapda.jpg",
+    "organization": "WAPDA",
+    "amount": 3150,
+    "dueDate": "2025-06-20T12:00:00.000Z"
+  },
+  {
+    "id": 6,
+    "billType": "electricity",
+    "icon": "https://i.ibb.co/279k31dS/bpdb.png",
+    "organization": "BPDB",
+    "amount": 2500,
+    "dueDate": "2025-06-25T12:00:00.000Z"
+  },
+  {
+    "id": 7,
+    "billType": "electricity",
+    "icon": "https://i.ibb.co/hJfR5Z88/nesco.png",
+    "organization": "NESCO",
+    "amount": 1700,
+    "dueDate": "2025-06-28T12:00:00.000Z"
+  }
+]
