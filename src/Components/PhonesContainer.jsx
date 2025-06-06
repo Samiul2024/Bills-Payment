@@ -56,7 +56,7 @@ const PhonesContainer = ({ phones }) => {
                     onClick={() => {
                         setShowAll(prv => !prv)
                         if (showAll) window.scrollTo(0, 350)
-                    }} label={showAll ? 'Show Less' : 'Show All Lawyer'} ></button>
+                    }}>{showAll ? 'Show Less' : 'Show All Bills'}</button>
             </div>
         </div>
     );

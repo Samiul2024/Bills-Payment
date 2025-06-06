@@ -1,20 +1,17 @@
-import React from 'react';
+import React, { useState } from 'react';
+import PhonesContainer from '../PhonesContainer';
+import { useLoaderData } from 'react-router';
 
 const Bills = () => {
+
+    const data = useLoaderData();
+    const [phones, setPhones] = useState(data);
     return (
-        <div className='max-w-sm mx-auto'>
-            <h2>Your Bills history</h2>
+        // <div className='max-w-sm mx-auto'>
+        <div className='flex flex-col justify-center text-center lg:mx-36 lg:my-8 my-4 gap-4 mx-4 items-center'>
+            {/* <h2>Your Bills </h2> */}
             <div>
-                <ol>
-                    <li>item-1</li>
-                    <li>item-2</li>
-                    <li>item-3</li>
-                    <li>item-4</li>
-                    <li>item-5</li>
-                    <li>item-6</li>
-                    <li>item-7</li>
-                    <li>item-8</li>
-                </ol>
+                <PhonesContainer phones={phones} />
             </div>
         </div>
     );

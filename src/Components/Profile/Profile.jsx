@@ -5,7 +5,7 @@ import { Link } from 'react-router';
 const Profile = () => {
     const { user } = use(AuthContext);
     return (
-        <div className='max-w-sm flex mt-4 flex-col items-center mx-auto'>
+        <div className='max-w-sm  flex my-4 flex-col items-center mx-auto'>
             <img className='object-cover rounded-2xl shadow-md ' src={user.photoURL} alt="profile photo" />
             {/* <p className='text-3xl'>
                 Welcome To Your Profile <br />

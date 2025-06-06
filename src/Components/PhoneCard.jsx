@@ -35,7 +35,7 @@ const PhoneCard = ({ phone, deletable, handleDelete }) => {
                     <Link to={`/bills-page/${id}`}>
                         <button
                             className='btn btn-primary'
-                            label='View Details' ></button>
+                             >Pay</button>
                     </Link>
                 </div>
             </div>
