@@ -8,7 +8,11 @@
 # Key features:
 As a Bill Management website It allows users to pay utility bills.  Users can see the list of bills, <br>such as electricity, gas, water, internet, etc. Those bills can be paid using their balance. <br>
 ### npm packages used:
-react, react-dom,react-router-dom,react-icons,firebase,react-countup,swiper
+* react
+* react-dom
+react-router-dom
+react-icons,
+firebase,react-countup,swiper
 
 ## Bills Payment Website Docs
 ### To Pay bills you have to Go to pay bills page but before that you need to login first <br>
