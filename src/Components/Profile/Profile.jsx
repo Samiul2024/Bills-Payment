@@ -6,7 +6,7 @@ const Profile = () => {
     const { user } = use(AuthContext);
     return (
         <div className='max-w-sm  flex my-4 flex-col items-center mx-auto'>
-            <img className='object-cover rounded-2xl shadow-md ' src={user.photoURL} alt="profile photo" />
+            <img className='object-cover w-72 h-64 rounded-2xl shadow-md ' src={user.photoURL} alt="profile photo" />
             {/* <p className='text-3xl'>
                 Welcome To Your Profile <br />
             </p> */}

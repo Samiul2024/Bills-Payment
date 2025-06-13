@@ -8,7 +8,7 @@ const UpdateProfile = () => {
     }
     return (
         <>
-            <div className="flex flex-col gap-4 my-4 items-center mx-auto">
+            <div className="flex flex-col gap-4 my-auto mb-16   items-center mx-auto">
                 <form onSubmit={updateProfile} className='flex flex-col shadow-lg mt-4 bg-black/50 p-4 rounded-3xl mx-auto gap-2'>
                     <h1 className='text-white text-4xl'>Update Your Profile</h1>
                     <label className="label">Name</label>

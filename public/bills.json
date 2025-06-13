@@ -1,58 +1,65 @@
 [
   {
     "id": 1,
-    "billType": "electricity",
+    "billType": "Electricity",
     "icon": "https://i.ibb.co/cX3N96fX/desco.png",
+    "billType_Icon": "FaBolt",
     "organization": "DESCO",
     "amount": 3200,
-    "dueDate": "2025-06-10T12:00:00.000Z"
+    "dueDate": "10 June, 2025"
   },
   {
     "id": 2,
-    "billType": "gas",
+    "billType": "Gas",
     "icon": "https://i.ibb.co/n8DhvbG6/titas-gas.jpg",
+    "billType_Icon": "FaGasPump",
     "organization": "Titas Gas",
     "amount": 2700,
-    "due-date": "2025-06-12T12:00:00.000Z"
+    "dueDate": "12 June, 2025"
   },
   {
     "id": 3,
-    "billType": "water",
+    "billType": "Water",
     "icon": "https://i.ibb.co/MyqN107d/dwasa.png",
+    "billType_Icon": "FaWater",
     "organization": "WASA",
     "amount": 2300,
-    "due-date": "2025-06-15T12:00:00.000Z"
+    "dueDate": "15 June, 2025"
   },
   {
     "id": 4,
-    "billType": "internet",
+    "billType": "Internet",
     "icon": "https://i.ibb.co/v6SbGJ1N/credit-card.jpg",
+    "billType_Icon": "FaWifi",
     "organization": "Credit Card",
     "amount": 1950,
-    "dueDate": "2025-06-18T12:00:00.000Z"
+    "dueDate": "18 June, 2025"
   },
   {
     "id": 5,
-    "billType": "electricity",
+    "billType": "Electricity",
     "icon": "https://i.ibb.co/FbxRbrrr/wapda.jpg",
+    "billType_Icon": "FaBolt",
     "organization": "WAPDA",
     "amount": 3150,
-    "dueDate": "2025-06-20T12:00:00.000Z"
+    "dueDate": "20 June, 2025"
   },
   {
     "id": 6,
-    "billType": "electricity",
+    "billType": "Electricity",
     "icon": "https://i.ibb.co/279k31dS/bpdb.png",
+    "billType_Icon": "FaBolt",
     "organization": "BPDB",
     "amount": 2500,
-    "dueDate": "2025-06-25T12:00:00.000Z"
+    "dueDate": "25 June, 2025"
   },
   {
     "id": 7,
-    "billType": "electricity",
+    "billType": "Electricity",
     "icon": "https://i.ibb.co/hJfR5Z88/nesco.png",
+    "billType_Icon": "FaBolt",
     "organization": "NESCO",
     "amount": 1700,
-    "dueDate": "2025-06-28T12:00:00.000Z"
+    "dueDate": "28 June, 2025"
   }
 ]

@@ -4,6 +4,8 @@ import { Link, NavLink } from 'react-router';
 import { AuthContext } from '../../contexts/AuthContext';
 // import { AuthContext } from '../../contexts/AuthContext';
 // import { AuthContext } from '../../main';
+import logo from '../../assets/logo.jpeg';
+
 
 const Footer = () => {
 
@@ -42,7 +44,8 @@ const Footer = () => {
 
     </>
     return (
-        <>
+
+        <footer>
             <div className=" flex flex-col items-center bg-gray-600 shadow-sm">
                 <div className="my-4">
                     {/* <div className="dropdown">
@@ -57,7 +60,7 @@ const Footer = () => {
                     </div> */}
                     <div className='flex'>
                         <NavLink to='/'>
-                            <img className='w-fit h-16 object-cover' src="/src/assets/logo.jpeg" alt="logo" />
+                            <img className='w-fit h-16 object-cover' src={logo} alt="logo" />
                         </NavLink>
 
                         {/* <a className="btn btn-ghost text-xl">sBanking</a> */}
@@ -94,8 +97,14 @@ const Footer = () => {
 
 
             </div>
+
+            {/* Credit Section starts */}
+
             <p className='text-white text-center py-4 bg-black'> © {new Date().getFullYear()} - All rights reserved || Designed & Developed By <a href="https://github.com/Samiul2024/Bills-Payment">Samiul</a></p>
-        </>
+            {/* Credit Section Ends */}
+        </footer>
+
+
     );
 };
 

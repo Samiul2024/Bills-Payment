@@ -30,7 +30,7 @@ const router = createBrowserRouter([
         index: true,
         element: <Home />,
         // hydrateFallbackElement: <h1 className="text-3xl text-center bg-amber-500 px-8">Loading Bills , Please wait.....</h1>,
-        // loader: () => fetch('/public/bills.json')
+        // loader: () => fetch('/bills.json')
 
       },
       { path: 'login', Component: Login },
@@ -43,7 +43,7 @@ const router = createBrowserRouter([
           <Bills></Bills>,
         </PrivateRoute>,
         hydrateFallbackElement: <h1 className="text-3xl text-center bg-amber-500 px-8">Loading Bills , Please wait.....</h1>,
-        loader: () => fetch('/public/bills.json')
+        loader: () => fetch('/bills.json')
       },
       {
         path: 'profile',
@@ -69,7 +69,7 @@ const router = createBrowserRouter([
           <PhoneDetails></PhoneDetails>,
         </PrivateRoute>,
         hydrateFallbackElement: <h1 className="text-3xl text-center bg-amber-500 px-8">Loading Bills details , Please wait.....</h1>,
-        loader: () => fetch('../bills.json'),
+        loader: () => fetch('/bills.json'),
 
       }
     ]

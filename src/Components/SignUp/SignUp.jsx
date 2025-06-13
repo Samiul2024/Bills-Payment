@@ -66,7 +66,7 @@ const SignUp = () => {
     }
     return (
 
-        <div className="hero-content flex-col mx-auto lg:flex-col">
+        <div className="hero-content my-8 md:my-[180px] flex-col mx-auto lg:flex-col">
             <div className="text-center lg:text-left">
                 <h1 className="text-3xl font-bold">Please Register!</h1>
             </div>

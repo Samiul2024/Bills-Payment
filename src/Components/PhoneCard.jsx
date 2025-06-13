@@ -1,8 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router';
-// import { MdDeleteForever } from "react-icons/md";
-// import Button from './ui/Button';
-// import { removeFavourites } from '../utilis';
 
 
 const PhoneCard = ({ phone, deletable, handleDelete }) => {

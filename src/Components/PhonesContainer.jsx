@@ -24,7 +24,7 @@ const PhonesContainer = ({ phones }) => {
                 <h1 className='font-bold text-4xl'>Pay Bills</h1>
                 <p className='text-xl'>sBanking, Your Trusted One stop Online Banking Solution.</p>
             </div>
-            <div className='grid grid-cols-1  lg:grid-cols-2 gap-8 mb-8'>
+            <div className='grid grid-cols-1 gap-8 mb-8'>
                 {
                     Array.isArray(displayPhones) ? (
                         displayPhones.map(phone => (

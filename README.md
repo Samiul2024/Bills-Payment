@@ -1,16 +1,20 @@
+PROJECT NAME: sBanking <br>
+Project Theme : <br>
+
+This is a Bill Management website that allows users to pay utility bills.  Users can see the list of bills, such as electricity, gas, water, internet, etc. Those bills can be paid using their balance. <br>
+
+Purpose: Trusted One Stop Online Banking Solution for everyone. Saving Hassle And time of Bangladeshi People.<br>
+Live URL:https://bills-payment-1fa39.web.app/ <br>
+Key features:As a Bill Management website It allows users to pay utility bills.  Users can see the list of bills, <br>such as electricity, gas, water, internet, etc. Those bills can be paid using their balance. <br>
+npm packages used:react, react-dom,react-router-dom,react-icons,firebase,react-countup,swiper<br>
+
 # Bills Payment Website Docs
-TO Pay bills We have to Go to pay bill page but before that we need to login first
-If you are not registered you will be asked to register to our website first
-
-# React + Vite
-
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
-
-Currently, two official plugins are available:
-
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
-
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+To Pay bills you have to Go to pay bills page but before that you need to login first <br>
+If you are not registered you will be asked to register to our website first.<br>
+After successful registration you can login to out site you can also login using your Google Account easily.<br>
+After successful Login you will be redirected to the page you were trying to go.<br>
+From the Bills page you can select the bill you want to pay just click the "Pay" Button of the card , Then you will <br>be redirected to the Bill Details page and asked to Select A Bank Card to pay that bill,<br>
+After Selecting the card ,just click the "Pay Bill " Button .Your bill would be paid ,You will get an alert of <br>successful Bill Payment and redirected to the Bills page.
+<br>
+Thanks For Staying With Us.
+<br>

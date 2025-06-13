@@ -25,7 +25,7 @@ const SwiperCarousel = () => {
     ];
 
     return (
-        <div className="w-full max-h-full min-h-full max-w-4xl mx-auto p-4">
+        <div className="w-full max-h-full min-h-full max-w-4xl mx-auto mb-4 p-4">
             <Swiper
                 modules={[Navigation, Pagination, Autoplay]}
                 spaceBetween={30}
@@ -37,7 +37,7 @@ const SwiperCarousel = () => {
             >
                 {slides.map((slide) => (
                     <SwiperSlide key={slide.id}>
-                        <div className="w-64 h-64 mx-auto flex flex-col items-center justify-center text-center rounded-2xl shadow-lg">
+                        <div className="w-64 h-64 mx-auto mb-8 flex flex-col items-center justify-center text-center rounded-2xl shadow-lg">
                             <img
                                 src={slide.image}
                                 alt={slide.title}
