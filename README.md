@@ -10,13 +10,16 @@ As a Bill Management website It allows users to pay utility bills.  Users can se
 ### npm packages used:
 * react
 * react-dom
-react-router-dom
-react-icons,
-firebase,react-countup,swiper
+* react-router-dom
+* react-icons,
+* firebase
+* react-countup
+* swiper
 
 ## Bills Payment Website Docs
-### To Pay bills you have to Go to pay bills page but before that you need to login first <br>
-If you are not registered you will be asked to register to our website first.<br>
+### 
+1) To Pay bills you have to Go to pay bills page but before that you need to login first 
+2) If you are not registered you will be asked to register to our website first.<br>
 After successful registration you can login to out site you can also login using your Google Account easily.<br>
 After successful Login you will be redirected to the page you were trying to go.<br>
 From the Bills page you can select the bill you want to pay just click the "Pay" Button of the card , Then you will <br>be redirected to the Bill Details page and asked to Select A Bank Card to pay that bill,<br>
