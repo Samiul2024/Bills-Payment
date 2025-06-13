@@ -1,11 +1,11 @@
-PROJECT NAME : sBanking <br>
-Project Theme : <br>
+#PROJECT NAME : sBanking <br>
+#Project Theme : <br>
 
 This is a Bill Management website that allows users to pay utility bills.  Users can see the list of bills, such as electricity, gas, water, internet, etc. Those bills can be paid using their balance. <br>
 
-Purpose : Trusted One Stop Online Banking Solution for everyone. Saving Hassle And time of Bangladeshi People.<br>
-Live URL : https://bills-payment-1fa39.web.app/ <br>
-Key features:As a Bill Management website It allows users to pay utility bills.  Users can see the list of bills, <br>such as electricity, gas, water, internet, etc. Those bills can be paid using their balance. <br>
+#Purpose : Trusted One Stop Online Banking Solution for everyone. Saving Hassle And time of Bangladeshi People.<br>
+##Live URL : https://bills-payment-1fa39.web.app/ <br>
+#Key features:As a Bill Management website It allows users to pay utility bills.  Users can see the list of bills, <br>such as electricity, gas, water, internet, etc. Those bills can be paid using their balance. <br>
 npm packages used:react, react-dom,react-router-dom,react-icons,firebase,react-countup,swiper<br>
 
 # Bills Payment Website Docs
