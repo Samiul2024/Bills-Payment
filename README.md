@@ -27,5 +27,5 @@ As a Bill Management website It allows users to pay utility bills.  Users can se
 * Your bill would be paid ,
 * You will get an alert of successful Bill Payment 
 * And you'd be redirected to the Bills page.
-
+7) To LogOut : Click Your Profile Icon ,hit "LogOut" Button
 ### Thanks For Staying With Us.
