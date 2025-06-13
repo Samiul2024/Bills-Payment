@@ -19,11 +19,13 @@ As a Bill Management website It allows users to pay utility bills.  Users can se
 ## Bills Payment Website Docs
 ### 
 1) To Pay bills you have to Go to pay bills page but before that you need to login first 
-2) If you are not registered you will be asked to register to our website first.<br>
-After successful registration you can login to out site you can also login using your Google Account easily.<br>
-After successful Login you will be redirected to the page you were trying to go.<br>
-From the Bills page you can select the bill you want to pay just click the "Pay" Button of the card , Then you will <br>be redirected to the Bill Details page and asked to Select A Bank Card to pay that bill,<br>
-After Selecting the card ,just click the "Pay Bill " Button .Your bill would be paid ,You will get an alert of <br>successful Bill Payment and redirected to the Bills page.
-<br>
-Thanks For Staying With Us.
-<br>
+2) If you are not registered you will be asked to register to our website first.
+3) After successful registration you can login to out site you can also login using your Google Account easily.
+4) After successful Login you will be redirected to the page you were trying to go.
+5) From the Bills page you can select the bill you want to pay just click the "Pay" Button of the card , Then you will be redirected to the Bill Details page and asked to Select A Bank Card to pay that bill.
+6) After Selecting the card ,just click the "Pay Bill " Button .
+* Your bill would be paid ,
+* You will get an alert of successful Bill Payment 
+* And you'd be redirected to the Bills page.
+
+### Thanks For Staying With Us.
