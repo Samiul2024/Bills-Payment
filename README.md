@@ -17,7 +17,7 @@ As a Bill Management website It allows users to pay utility bills.  Users can se
 * swiper
 
 ## Bills Payment Website Docs
-### 
+### Step by Step Guidance to Use the Website Most Easily 
 1) To Pay bills you have to Go to pay bills page but before that you need to login first 
 2) If you are not registered you will be asked to register to our website first.
 3) After successful registration you can login to out site you can also login using your Google Account easily.
